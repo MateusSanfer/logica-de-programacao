@@ -6,7 +6,7 @@ Algoritmo "Atividade6"
 // Data atual  : 28/03/2023
 Var
    // Seção de Declarações das variáveis
-   valorMaior, valorMenor, numero1, numero2, soma, produto: inteiro
+   numero1, numero2, soma, produto: inteiro
    media: real
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -25,10 +25,10 @@ Inicio
    escreval("A Média do valor é:", media)
    escreval("O Produto é:", produto)
 
-   se numero1 > entao
-      escreval("Maior Primeiro valor")
-   senao numero2 > entao
-      escreval("Maior Segundo valor")
+   se numero1 > numero2 entao
+      escreval("Maior Primeiro valor", numero1)
+   senao >
+      escreval("Maior Segundo valor", numero2)
    fimse
 
 Fimalgoritmo
