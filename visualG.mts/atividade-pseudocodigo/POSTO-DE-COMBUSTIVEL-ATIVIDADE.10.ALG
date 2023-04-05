@@ -1,9 +1,9 @@
 Algoritmo "posto-de-combustivel-atividade.10"
-// Disciplina   : [Linguagem e L?gica de Programa??o]
+// Disciplina   : [Linguagem e L?gica de Programação]
 // Professor   : Carlos Anderson Santos de Jesus
-// Descri??o   : Escreva um algoritmo que leia o n?mero de litros vendidos e o tipo de combust?vel (codificado da
+// Descri??o   : Escreva um algoritmo que leia o n?mero de litros vendidos e o tipo de combustível (codificado da
 //seguinte forma: A-?lcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendose
-//que o pre?o do litro da gasolina ? R$ 6,59 e o pre?o do litro do ?lcool ? R$ 3,79.
+//que o preço do litro da gasolina ? R$ 6,59 e o preço do litro do álcool ? R$ 3,79.
 // Autor(a)    : Mateus Santos Fernandes
 // Data atual  : 02/04/2023
 Var
