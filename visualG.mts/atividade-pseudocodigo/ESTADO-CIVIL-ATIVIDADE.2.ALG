@@ -1,43 +1,44 @@
 Algoritmo "estado-civil-ativ.2"
-// Disciplina   : [Linguagem e LÛgica de ProgramaÁ„o]
+// Disciplina   : [Linguagem e L√≥gica de Programa√ß√£o]
 // Professor   : Carlos Anderson Santos de Jesus
-// DescriÁ„o   : FaÁa um algoritmo que leia o nome, o sexo e o estado civil de
-// uma pessoa. Caso sexo seja ìFî e estado civil seja ìCASADAî, solicitar o tempo
-// de casada (anos). Por fim, mostre os dados do usu·rio.
+// Descri√ß√£o   : Fa√ßa um algoritmo que leia o nome, o sexo e o estado civil de
+// uma pessoa. Caso sexo seja ‚ÄúF‚Äù e estado civil seja ‚ÄúCASADA‚Äù, solicitar o tempo
+// de casada (anos). Por fim, mostre os dados do usu√°rio.
 // Autor(a)    : Mateus Santos Fernandes
 // Data atual  : 31/03/2023
 Var
-   // SeÁ„o de DeclaraÁıes das vari·veis
+   // Se√ß√£o de Declara√ß√µes das vari√°veis
    nome, sexo, estadoCivil: caracter
    tempoCasada: inteiro
 
 Inicio
-   // SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...
+   // Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc...
 
-   //O usu·rio digita seus dados e estado civil
+   //O usu√°rio digita seus dados e estado civil
    escreval("Por favor, digite seu nome: ")
    leia(nome)
 
    escreval("Digite seu sexo (Masculino/Feminino): ")
    leia(sexo)
 
-   escreval("Qual o seu Estado Civil?(Casada(o)/Solteiro(a)/Vi˙vo(a): ")
+   escreval("Qual o seu Estado Civil?(Casada(o)/Solteiro(a)/Vi√∫vo(a): ")
    leia(estadoCivil)
 
-   //Verifica se o usu·rio È do sexo feminino e est· casado
+   //Verifica se o usu√°rio √© do sexo feminino e est√° casado
+   //((sexo = "F") ou (sexo = "f")) e
    se (sexo = "feminino") e (estadoCivil = "casada") entao
-      escreval("Por favor, digite o tempo de casada(anos): ")
+      escreval("Por favor, digite o tempo de casada em anos.: ")
       leia(tempoCasada)
    fimse
 
    limpatela
 
-   // Mostra o resultado dos dados digitados pelo usu·rio
+   // Mostra o resultado dos dados digitados pelo usu√°rio
    escreval("Nome: ", nome)
    escreval("Sexo: ", sexo)
    escreval("Estado Civil: ", estadoCivil)
-
-   se (sexo = "Feminino") e (estadoCivil = "casada") entao //se o usu·rio È do sexo feminino e est· casado
-      escreval("Tempo de casada: ", tempoCasada, " anos") //exibe o tempo de casado
+   // Mostrando tempo de casada se for do sexo feminino
+   se (tempoCasada > 0) entao //se o usu√°rio √© do sexo feminino e est√° casado
+      escreval("Anos de casada: ", tempoCasada, " anos") //exibe o tempo de casado
    fimse
 Fimalgoritmo
