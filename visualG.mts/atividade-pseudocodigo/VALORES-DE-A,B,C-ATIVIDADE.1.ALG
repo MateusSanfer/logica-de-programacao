@@ -1,15 +1,15 @@
 Algoritmo "Valores-de-A,B,C-atividade.1"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 30/03/2023
 Var
-// Seção de Declarações das variáveis
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
 A, B, C, soma: real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc...
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
  Escreval("Digite um numero: ")
  Leia(A)
  Escreval("Digite outro numero: ")
@@ -17,12 +17,14 @@ Inicio
  Escreval("Digite um terceiro numero: ")
  Leia(C)
 
+//Soma A+B
  Soma <- A + B
 
+//Se soma de A + B for maior que C
  Se soma < C entao
- Escreval("A soma de", A, " mais ", B, " é de: ", soma)
+ Escreval("A soma de", A, " mais ", B, " Ã© de: ", soma)
  Senao
- ("A soma é maior")
+ ("A soma Ã© maior")
 Fimse
 
 Fimalgoritmo
