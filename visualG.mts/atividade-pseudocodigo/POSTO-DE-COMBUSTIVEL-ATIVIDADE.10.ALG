@@ -18,7 +18,8 @@ início
    leia(combustivel)
    espel("Digite quantos litros deseja: ")
    leia(litrosVendidos)
-
+   //se (tipoCombustivel = "G"
+   //preço
    //Cálculo do preço por litro e do desconto de acordo com o tipo de combustível
    se combustivel = "A" entao// ea quantidade vendida
       se litrosVendidos <= 25 entao
@@ -44,6 +45,6 @@ início
    totalPago <- litrosVendidos * precoLitro * (1 - desconto)// O "1" representa o 100. 100 - o valor do desconto.
 
    //Mostra quanto o cliente pagou e quanto de desconto em Reais(R$) recebeu
-   escreval("Total pago: R$ ", totalPago:2:2)
-   escreval("Desconto: R$", litrosVendidos * precoLitro * desconto:2:2)
+   escreval("Total pago: R$ ", totalPago:3:2)
+   escreval("Desconto: R$", litrosVendidos * precoLitro * desconto:3:2)
 Fimalgoritmo
