@@ -1,37 +1,38 @@
 Algoritmo "desconto-ativ7"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Carlos Anderson Santos de Jesus
-// Descrição   : Faça um algoritmo para ler: a descrição do produto (nome), a quantidade
-// adquirida e o preço unitário. Calcular e escrever o total (total = quantidade adquirida * preço unitário),
-//  o desconto e o total a pagar (total a pagar = total - desconto), sabendo-se que: % - Se quantidade > 10 o desconto será de 5%.
-// - Se quantidade <= 5 o desconto será de 2% - Se quantidade > 5 e quantidade <=10 o desconto será de 3.
+// DescriÃ§Ã£o   : FaÃ§a um algoritmo para ler: a descriÃ§Ã£o do produto (nome), a quantidade
+// adquirida e o preÃ§o unitÃ¡rio. Calcular e escrever o total (total = quantidade adquirida * preÃ§o unitÃ¡rio),
+//  o desconto e o total a pagar (total a pagar = total - desconto), sabendo-se que: % - Se quantidade > 10 o desconto serÃ¡ de 5%.
+// - Se quantidade <= 5 o desconto serÃ¡ de 2% - Se quantidade > 5 e quantidade <=10 o desconto serÃ¡ de 3.
 // Autor(a)    : Mateus Santos Fernandes
 // Data atual  : 01/04/2023
 Var
-   // Seção de Declarações das variáveis
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
    nome: caracter
    precoUnitario, total, totalPagar, desconto: real
    quantidade: inteiro
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
    escreval("Digite o nome do produto: ")
    leia(nome)
    escreval("Por favor, digite a quantidade desejada: ")
    leia(quantidade)
-   escreval("Por favor, digite o preço unitário: ")
+   escreval("Por favor, digite o preÃ§o unitÃ¡rio: ")
    leia(precoUnitario)
 
-   //multiplitica a quantidade pelo preço e armazena o valor em total
+   //multiplitica a quantidade pelo preÃ§o e armazena o valor em total
    total <- quantidade * precoUnitario
 
    //Calcula a quantidade dos produtos e quanto de desconto receberar
    se quantidade <= 5 entao
       desconto <- total * 0.02
-   fimse
+   senao
    se (quantidade > 5) e (quantidade <= 10) entao
       desconto <- total * 0.03
    senao
       desconto <- total * 0.05
+   fimse
    fimse
 
    //subitrai o valor de total pelo desconto que foi definido e armazena em total a pagar
