@@ -1,47 +1,49 @@
-Algoritmo "Calculadora-ativ.5"
-// Disciplina   : [Linguagem e LÛgica de ProgramaÁ„o]
+Algoritmo "Calculadora-atividade.5"
+// Disciplina   : [Linguagem e L√≥gica de Programa√ß√£o]
 // Professor   : Carlos Anderson Santos de Jesus
-// DescriÁ„o   : FaÁa um programa que leia um cÛdigo de operaÁ„o (+,-,* ou /), e tambÈm dois valores inteiros A e B. O programa deve calcular o resultado da operaÁ„o escolhida aplicado a A e B. Por exemplo, se a operaÁ„o escolhida foi * e A = 1 e B = 3, o programa deve fornecer como resultado o valor de 1*3, que È 3.
+// Descri√ß√£o   : Fa√ßa um programa que leia um c√≥digo de opera√ß√£o (+,-,* ou /), e tamb√©m dois valores inteiros A e B. O programa deve calcular o resultado da opera√ß√£o escolhida aplicado a A e B. Por exemplo, se a opera√ß√£o escolhida foi * e A = 1 e B = 3, o programa deve fornecer como resultado o valor de 1*3, que √© 3.
 // Autor(a)    : Mateus Santos Fernandes
 // Data atual  : 31/03/2023
 Var
-   // SeÁ„o de DeclaraÁıes da;s vari·veis
+   // Se√ß√£o de Declara√ß√µes da;s vari√°veis
    A, B: inteiro
    resultado: real
    operacao: caracter
 
 Inicio
-   // SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...
+   // Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc...
 
-   //O usu·rio adiciona dois valores e entre eles decide qual operaÁ„o deseja.
+   //O usu√°rio adiciona dois valores e entre eles decide qual opera√ß√£o deseja.
    escreval("Digite um numero: ")
    leia(A)
-   escreval("Escolha uma operaÁ„o(+, -, *, /): ")
+   escreval("Escolha uma opera√ß√£o(+, -, *, /): ")
    leia(operacao)
    escreval("Digite outro numero: ")
    leia(B)
 
-   //Verifica a operaÁ„o escolhida e o c·lculodo resultado.
+   //Verifica a opera√ß√£o escolhida e o c√°lculodo resultado.
    se operacao = "+" entao
       resultado <- A + B
    senao
-      escreval("OperaÁ„o inv·lida!")
+      escreval("Opera√ß√£o inv√°lida!")
       se operacao = "-" entao
          resultado <- A - B
       senao
-         escreval("OperaÁ„o inv·lida!")
+         escreval("Opera√ß√£o inv√°lida!")
          se operacao = "*" entao
             resultado <- A * B
          senao
-            escreval("OperaÁ„o inv·lida!")
+            escreval("Opera√ß√£o inv√°lida!")
             se operacao = "/" entao
                resultado <- A / B
             senao
-               escreval("OperaÁ„o inv·lida!")
+               escreval("Opera√ß√£o inv√°lida!")
             fimse
          fimse
       fimse
    fimse
-   // exibiÁ„o de resultado.
-   escreval("Resultado", resultado)
+   // exibi√ß√£o de resultado.
+   escreval( "A = ", A)
+   escreval("B = ", B)
+   escreval("Resultado: ", A, operacao, B resultado)
 Fimalgoritmo
