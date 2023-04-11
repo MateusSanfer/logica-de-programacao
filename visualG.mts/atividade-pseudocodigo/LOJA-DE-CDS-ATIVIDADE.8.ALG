@@ -1,18 +1,18 @@
 Algoritmo "loja-de-cds-ativ.8"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Carlos Anderson Santos de Jesus
-// Descrição   : Em uma loja de CD´s existem apenas quatro tipos de preços que estão associados a cores.
-// Assim os CD´s que ficam na loja não são marcados por preços e sim por cores. Desenvolva o algoritmo
-// que a partir da entrada da cor o software mostre o preço.
+// DescriÃ§Ã£o   : Em uma loja de CDÂ´s existem apenas quatro tipos de preÃ§os que estÃ£o associados a cores.
+// Assim os CDÂ´s que ficam na loja nÃ£o sÃ£o marcados por preÃ§os e sim por cores. Desenvolva o algoritmo
+// que a partir da entrada da cor o software mostre o preÃ§o.
 // Autor(a)    : Mateus Santos Fernandes
 // Data atual  : 01/04/2023
 Var
-   // Seção de Declarações das variáveis
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
    preco: real
    cor: caracter
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
    escreval("Por favor, selecione a cor do CD (verde, azul, amarelo, vermelho): ")
    leia(cor)
 
@@ -32,6 +32,6 @@ Inicio
    
    limpatela
    
-   escreval("Boa escolha esse CD custa: R$ ", preco:2:2)
+   escreval("Boa escolha, esse CD custa: R$ ", preco:3:2)
    
 Fimalgoritmo
