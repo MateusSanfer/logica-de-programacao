@@ -1,25 +1,25 @@
 Algoritmo "posto-de-combustivel-atividade.10"
-// Disciplina : [Linguagem e Lógica de Programação]
+// Disciplina : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor: Carlos Anderson Santos de Jesus
-// Descrição : Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da
-//seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendose
-//que o preço do litro da gasolina é R$ 6,59 e o preço do litro do álcool é R$ 3,79.
+// DescriÃ§Ã£o : Escreva um algoritmo que leia o nÃºmero de litros vendidos e o tipo de combustÃ­vel (codificado da
+//seguinte forma: A-Ã¡lcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendose
+//que o preÃ§o do litro da gasolina Ã© R$ 6,59 e o preÃ§o do litro do Ã¡lcool Ã© R$ 3,79.
 // Autor(a): Mateus Santos Fernandes
 // Dados atuais: 02/04/2023
 var
-   // Seção de Declarações das variáveis
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
    combustivel: caractere
    totalPago, precoLitro, litrosVendidos, desconto:real
 
-início
-   // Seção de Comandos, procedimentos, funções, operadores, etc...
-   // O cliente digita qual o combustível e quantos litros ele deseja.
-   escreval("Qual o tipo de combustível(A ou G): ")
+inÃ­cio
+   // SeÃ§Ã£o de Comandos, procedimentos, funÃ§Ãµes, operadores, etc...
+   // O cliente digita qual o combustÃ­vel e quantos litros ele deseja.
+   escreval("Qual o tipo de combustÃ­vel(A ou G): ")
    leia(combustivel)
    espel("Digite quantos litros deseja: ")
    leia(litrosVendidos)
 
-   //Cálculo do preço por litro e do desconto de acordo com o tipo de combustível
+   //CÃ¡lculo do preÃ§o por litro e do desconto de acordo com o tipo de combustÃ­vel
    se combustivel = "A" entao// ea quantidade vendida
       se litrosVendidos <= 25 entao
          precoLitro <- 3,79
@@ -40,10 +40,10 @@ início
       fimse
    fimse
 
-   //Cálculo do valor total a ser pago pelo cliente
+   //CÃ¡lculo do valor total a ser pago pelo cliente
    totalPago <- litrosVendidos * precoLitro * (1 - desconto)// O "1" representa o 100. 100 - o valor do desconto.
 
    //Mostra quanto o cliente pagou e quanto de desconto em Reais(R$) recebeu
    escreval("Total pago: R$ ", totalPago:2:2)
-   espel("Desconto: R$", litrosVendidos * precoLitro * desconto:2:2)
+   escreval("Desconto: R$", litrosVendidos * precoLitro * desconto:2:2)
 Fimalgoritmo
