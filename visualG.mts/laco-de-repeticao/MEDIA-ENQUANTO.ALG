@@ -1,37 +1,43 @@
 Algoritmo "Media-enquanto"
-// Disciplina   : [Linguagem e LÛgica de ProgramaÁ„o]
+// Disciplina   : [Linguagem e L√≥gica de Programa√ß√£o]
 // Professor   : Antonio Carlos Nicolodi
-// DescriÁ„o   : Aqui vocÍ descreve o que o programa faz! (funÁ„o)
-// Autor(a)    : Nome do(a) aluno(a)
+// Descri√ß√£o   : Escreva um algoritmo no visualg, que enquanto a resposta do usu√°rio for "SIM", o usu√°rio pode digitar 
+//uma nota. Ao sair do la√ßo de repeti√ß√£o, fa√ßa a m√©dia aritm√©tica. 
+//Obs.: Use um contador dentro do la√ßo de repeti√ß√£o para contar a quantidade e itera√ß√µes (loops). 
+// Autor(a)    : Mateus Fernandes
 // Data atual  : 12/04/2023
 Var
-   // SeÁ„o de DeclaraÁıes das vari·veis
+   // Se√ß√£o de Declara√ß√µes das vari√°veis
    resposta: caracter
    nota, contador: inteiro
    media, soma: real
 Inicio
-   // SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...
+   // Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc...
    soma <- 0
    contador <- 0
    resposta <- "sim"
 
+   //Iniciamos um la√ßo "Enquanto" a resposta for igual a "sim", ou seja, enquanto o usu√°rio quiser digitar mais notas.
    enquanto resposta = "sim" faca
       escreval("Digite uma nota")
       leia(nota)
 
       soma <- soma + nota
       contador <- contador + 1
-
+      
+      //Pegunta para o usu√°rio informar se deseja digitar outra nota e lemos a resposta.
       escreval("Deseja colocar outra nota(sim/nao")
       leia(resposta)
 
    fimenquanto
-
+   
+   //Verificamos se o contador √© maior que zero, ou seja, se o usu√°rio digitou pelo menos uma nota.
+   //Se sim, calculamos a m√©dia aritm√©tica e exibimos na tela. Se n√£o, exibimos uma mensagem informando que nenhuma nota foi digitada.
    se media >= 7 entao
       media <- (nota/contador)
-      escreval("VocÍ foi aprovado ", media)
+      escreval("Voc√™ foi aprovado ", media)
    senao
-      escreval(" VocÍ foi reprovado")
+      escreval(" Voc√™ foi reprovado")
    fimse
    
 Fimalgoritmo
