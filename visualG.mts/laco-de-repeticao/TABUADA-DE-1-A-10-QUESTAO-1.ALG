@@ -19,7 +19,7 @@ Inicio
    para i de 1 ate 10 faca
       resultado <- numero * i
 
-      escreva(resultado)
+      escreval(numero, " x ", i, " = ", resultado)
 
    fimpara
 
