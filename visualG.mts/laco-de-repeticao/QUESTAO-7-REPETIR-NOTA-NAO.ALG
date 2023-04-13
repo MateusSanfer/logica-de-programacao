@@ -32,7 +32,7 @@ Inicio
    media <- (soma/contador)
 
    se contador > 0 entao
-      escreval("Sua média é: ", media)
+      escreval("Sua média é: ", media:2:2)
    senao
       escreval("Valor invalido!")
    fimse
