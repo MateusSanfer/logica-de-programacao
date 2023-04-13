@@ -27,7 +27,7 @@ Inicio
       escreval("Você quer colocar outra nota? (sim ou nao) ")
       leia(resposta)
 
-   ate resposta = "nao"
+   ate (resposta = "não")  ou (resposta = "n")
 
    media <- (soma/contador)
 
