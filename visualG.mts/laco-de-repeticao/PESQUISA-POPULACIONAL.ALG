@@ -1,23 +1,24 @@
 Algoritmo "pesquisa-populacional"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 18/04/2023
 Var
-   // Seção de Declarações das variáveis
-   tFamilias,  familias, filhos: inteiro
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
+    familias, filhos: inteiro
    mediaSalario, mediaFilhos, maiorSalario, menorSalario, salario: real
    resp: caracter
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   maiorSalario <- 0
-   menorSalario <- 99999
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
+   famÃ­lias <- 0
+   maiorSalario <- salario
+   menorSalario <- salario
 
    enquanto (salario >= 0) faca
 
-      escreval("Quantos filhos você tem? ")
+      escreval("Quantos filhos vocÃª tem? ")
       leia(filhos)
 
       familias <- familias + 1
@@ -31,20 +32,21 @@ Inicio
 
       mediaSalario <- mediaSalario + salario
       mediaFilhos <- mediaFilhos + filhos
-      escreval("Qual o seu salário? ")
+     
+		  escreval("Qual o seu salÃ¡rio? ")
       leia(salario)
 
    fimenquanto
 
-   escreval("Total de famílias que responderam: ", familias)
+   escreval("Total de famÃ­lias que responderam: ", familias)
 
-   escreval("Média do salário da população: ", mediaSalario/familias)
+   escreval("MÃ©dia do salÃ¡rio da populaÃ§Ã£o: ", mediaSalario/familias)
 
-   escreval("Média de números de filhos: ", mediaFilhos/familias)
+   escreval("MÃ©dia de nÃºmeros de filhos: ", mediaFilhos/familias)
 
-   escreval("Maior salário: ", maiorSalario)
+   escreval("Maior salÃ¡rio: ", maiorSalario)
 
-   escreval("Menor Salário" , menorSalario)
+   escreval("Menor SalÃ¡rio" , menorSalario)
 
 
 
