@@ -1,48 +1,48 @@
 Algoritmo "questao-3-Numeros-positivos"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi
-// Descrição   :  Faça um algoritmo que leia uma quantidade não determinada de
-// números positivos. Calcule:
-// a) quantidade de números pares e ímpares;
-// b) média de valores pares
-// c) média geral dos números lidos.
-// O número que encerrará a leitura será zero.
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
+// Professor   :  
+// DescriÃ§Ã£o   :  FaÃ§a um algoritmo que leia uma quantidade nÃ£o determinada de
+// nÃºmeros positivos. Calcule:
+// a) quantidade de nÃºmeros pares e Ã­mpares;
+// b) mÃ©dia de valores pares
+// c) mÃ©dia geral dos nÃºmeros lidos.
+// O nÃºmero que encerrarÃ¡ a leitura serÃ¡ zero.
 
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 19/04/2023
 Var
-   // Seção de Declarações das variáveis
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
    mediaPares, mediaGeral: real
-   numero, soma, pares, impares, contGeral, contPares, somaPares: inteiro
+   numero, soma, pares, impares, contGeral, somaPares: inteiro
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
    mediaPares <- 0
    mediaGeral <- 0
    soma <- 0
    contGeral <- 0
 
-   repita
-      escreval("Digite um numero: ")
+   repita // repete a o loop atÃ© o usuÃ¡rio digitar zero
+      escreval("Digite um numero: ") //A cada nÃºmero lido, Ã© verificado se ele Ã© positivo ou nÃ£o. 
       leia(numero)
 
-      contGeral <- contGeral + 1
+      contGeral <- contGeral + 1 
       soma <- soma + numero
 
-      se (numero mod 2)= 0 entao
-         pares <- pares + 1
-         contPares <- contPares + 1
+      se (numero mod 2)= 0 entÃ£o // verifica se o nÃºmero Ã© par ou Ã­mpar e incrementada 
+			//a contagem especÃ­fica de cada um deles. 
+         pares <- pares + 1
          somaPares <- somaPares + numero
-         mediaPares <- somaPares /contPares
+         mediaPares <- somaPares /pares
       senao
          impares <- impares + 1
-         contGeral <- contGeral + 1
+         contGeral <- contGeral + 1 // Faz a contagem geral dos nÃºmeros lidos. 
       fimse
 
-      mediaGeral <- soma/contGeral
+      mediaGeral <- soma/contGeral // CÃ¡lculo da mÃ©dia total dos nÃºmeros fornecidos. 
 
-   ate (numero = 0)
-
+   ate (numero = 0) // O loop termina quando o usuÃ¡rio digitar o nÃºmero zero. 
+	// O resultado final dos valores que o usuÃ¡rio forneceu, mostrando os nÃºmeros pares e impares, alÃ©m das mÃ©dias. 
    escreval("Numeros pares: ", pares)
    escreval("Numero impares: ", impares)
    escreval("media de Valores Pares: ", mediaPares)
