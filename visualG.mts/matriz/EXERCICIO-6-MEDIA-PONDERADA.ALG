@@ -6,7 +6,7 @@ Algoritmo "exercicio-6-Media-Ponderada"
 // Data atual  : 10/05/2023
 Var
    // Seção de Declarações das variáveis
-   disciplinas: vetor[1..3] de caractere
+   disciplinas: vetor[1..3] de caracter
    notas: vetor[1..3, 1..3] de real
    pesos: vetor[1..3] de real
    mediaPonderada: vetor[1..3] de real
@@ -25,22 +25,20 @@ Inicio
       para j de 1 ate 3 faca
          escreval ("Digite a ", j , "ª nota")
          leia(notas[i,j])
+         para i de 1 ate 3 faca
+            somaPonderada <- somaPonderada * pesos[j]
+
          fimpara
          mediaPonderada[i] <- somaPonderada / 10
          somaPonderada <- 0
       fimpara
+      limpatela
+
       para i de 1 ate 3 faca
-            somaPonderada <- somaPonderada + (notas[i,j] * pesos[i,j])
-   fimpara
-
-   limpatela
-
-   para i de 1 ate 3 faca
-      escreval("Disciplina: ", disciplinas[i])
-      para j de 1 ate 3 faca
-         escreval (j,"ª nota", notas[i,j])
-         escreval("Média", mediaPonderada[i])
+         escreval("Disciplina: ", disciplinas[i])
+         para j de 1 ate 3 faca
+            escreval (j"ª nota", notas[i,j])
+         fimpara
       fimpara
-   fimpara
 
 Fimalgoritmo
