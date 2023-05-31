@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-
+//[sizeof(int)] vetor com tamanho indefinido.
     int i, numNegativos = 0;
     float numeros[10], numPositivos = 0;
 
