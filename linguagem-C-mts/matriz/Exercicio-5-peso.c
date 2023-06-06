@@ -9,11 +9,13 @@ int main(){
     float notas[3][3];
     float media[3];
     float peso[3];
-    float pesoTotal;
+    float pesoTotal, somaPeso;
 
     peso[0] = 3;
     peso[1] = 3;
     peso[2] = 4;
+
+    somaPeso = peso[0] + peso[1] + peso[2];
 
     for ( i = 0; i < 3; i++)
     {
@@ -25,14 +27,12 @@ int main(){
             printf("Digite a %d nota: \n", j+1);
             scanf("%f", &notas[i][j]);
             pesoTotal += notas[i][j] * peso[j];
-        }
-        fflush(stdin);
 
-        media[i] = pesoTotal / 10;
+            fflush(stdin);
+        }
+        media[i] = pesoTotal / somaPeso;
         pesoTotal = 0;
     }
-    system("cls");
-
     
     for ( i = 0; i < 3; i++)
     {
@@ -42,8 +42,7 @@ int main(){
         {
             printf("%d Nota: %.1f peso %f \n", j+1, notas[i][j], peso[j]);
         }
-        printf("Media : %.1f\n", media[i]);
-        printf("\n");
+        printf("Media : %f\n", media[i]);
     }
     
     return 0;
