@@ -6,7 +6,7 @@ void maiorNumero(int numeroUm, int numeroDois)
 {
 
     int maior;
-    if (numeroUm < numeroDois)
+    if (numeroUm > numeroDois)
     {
         maior = numeroUm;
     }
@@ -19,7 +19,7 @@ void maiorNumero(int numeroUm, int numeroDois)
     return maior;
 }
 
-void menorNumero(int numeroUm, int numeroDois)
+int menorNumero(int numeroUm, int numeroDois)
 {
 
     int menor;
@@ -43,8 +43,13 @@ void cabecalho()
     printf("----------------------------------------\n");
 }
 
-int main(){
-    int primeiroNumero, segundoNumero;
+int main() //Principal
+{
+    setlocale(LC_ALL, "portuguese");
+
+    int primeiroNumero, segundoNumero, menor;
+
+    cabecalho(); //Sem parametros
 
     printf("Digite o primeiro numero: \n");
     scanf("%d", &primeiroNumero);
@@ -53,10 +58,12 @@ int main(){
     scanf("%d", &segundoNumero);
 
     maiorNumero(primeiroNumero, segundoNumero);
-    //printf"menor numero: %d", menorNumero(primeiroNumero, segundoNumero);
-
-    }
+    // printf"menor numero: %d", menorNumero(primeiroNumero, segundoNumero);
+    
     menor = menorNumero(primeiroNumero, segundoNumero);
-    printf("Menor número: %d", menor);
+    printf("Menor n?mero: %d", menor);
 
-setlocale(LC_ALL, "");
+    return 0;
+}
+
+
