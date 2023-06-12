@@ -2,26 +2,25 @@
 #include <stdlib.h>
 #include <locale.h>
 
-void IMC(float peso, float altura)
-{
-   peso/ (altura *  altura);
+void resultado(float peso, float altura){
+   
+    float imc = peso / (altura * altura);
+
+    printf("Seu IMC é : %.1f\n", imc);
 }
 
-int main()
-{
-    setlocale(LC_ALL, "portuguese");
+int main(){
 
-    float altura, peso;
+    float peso, altura;
 
-    printf("Digite seu peso(kg): \n");
+    printf("Digite seu peso: \n");
     scanf("%f", &peso);
 
-    printf(*"Digite sua altura(m): \n");
+    printf("Digite sua altura: \n");
     scanf("%f", &altura);
 
-    IMC(peso, altura);
+   resultado(peso, altura);
 
-    printf("Seu IMC Ã©: %.1f\n", IMC);
-
-    return 0;
+   return 0;
 }
+
