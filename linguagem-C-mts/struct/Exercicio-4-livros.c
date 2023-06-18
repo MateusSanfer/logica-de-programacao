@@ -10,6 +10,7 @@ struct biblioteca
     float preco;
 };
 
+
 int main()
 {
     setlocale(LC_ALL, "portuguese");
@@ -44,6 +45,7 @@ int main()
         printf("Autor: %s\n", cadastro[i].autor);
         printf("Categoria: %s\n", cadastro[i].categoria);
         printf("Preço: %.2f\n", cadastro[i].preco);
+        printf("");
     }
     return 0;
 }
